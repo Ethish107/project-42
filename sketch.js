@@ -62,7 +62,7 @@ function draw() {
   if(bananaGroup.isTouching(player)){
     
     bananaGroup.destroyEach();
-    player.scale += 0.05;
+    player.scale += 0.03;
     score += 3;
   }
 
