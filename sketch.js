@@ -117,6 +117,7 @@ function spawnStone(){
     stone.scale = 0.2;
     stone.velocityX = -7;
     stone.lifetime = 160;
+    stone.debug = true;
 
     stoneGroup.add(stone);
     }
