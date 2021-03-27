@@ -118,6 +118,7 @@ function spawnStone(){
     stone.velocityX = -7;
     stone.lifetime = 160;
     stone.debug = true;
+    stone.setCollider("circle",20,-10,120);
 
     stoneGroup.add(stone);
     }
