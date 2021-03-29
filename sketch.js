@@ -99,7 +99,7 @@ function draw() {
 
 function spawnFood(){
    if(frameCount%100 === 0){
- banana = createSprite(970,340);
+ banana = createSprite(970,310);
  banana.addImage(bananaImg);
  banana.scale = 0.06;
  banana.velocityX = -6;
