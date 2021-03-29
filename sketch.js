@@ -103,7 +103,7 @@ function spawnFood(){
  banana.addImage(bananaImg);
  banana.scale = 0.06;
  banana.velocityX = -6;
- banana.lifetime = 140;
+ banana.lifetime = 170;
  
 
  bananaGroup.add(banana);
