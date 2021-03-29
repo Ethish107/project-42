@@ -19,19 +19,19 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(800,400);
+  createCanvas(950,600);
   
-  backgr=createSprite(0,0,800,400);
+  backgr=createSprite(0,50,800,400);
   backgr.addImage(backImage);
-  backgr.scale=1.5;
+  backgr.scale=1.8;
   backgr.x=backgr.width/2;
   backgr.velocityX=-4;
   
-  player = createSprite(100,340,20,50);
+  player = createSprite(100,470,20,50);
   player.addAnimation("Running",player_running);
   player.scale = 0.1;
   
-  ground = createSprite(400,350,800,10);
+  ground = createSprite(400,500,800,10);
   ground.x=ground.width/2;
   ground.visible=false;
 
@@ -75,7 +75,7 @@ function draw() {
     bananaGroup.destroyEach();
     stoneGroup.destroyEach();
 
-   gameOver = createSprite(400,200);
+   gameOver = createSprite(475,300);
    gameOver.addImage(gameOverImg);
    gameOver.scale = 0.6;
 
@@ -99,7 +99,7 @@ function draw() {
 
 function spawnFood(){
    if(frameCount%100 === 0){
- banana = createSprite(820,140);
+ banana = createSprite(970,340);
  banana.addImage(bananaImg);
  banana.scale = 0.06;
  banana.velocityX = -6;
@@ -112,7 +112,7 @@ function spawnFood(){
 
 function spawnStone(){
   if(frameCount%300 === 0){
-    stone = createSprite(840,320);
+    stone = createSprite(970,470);
     stone.addImage(stoneImg);
     stone.scale = 0.2;
     stone.velocityX = -7;
